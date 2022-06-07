@@ -5,7 +5,7 @@
 						<meta http-equiv="Imagetoolbar" content="no">
 			<! ochrona strony>
 					
-	
+	<!-- zbior skrypt =====    <marquee>TEKST Z PRAWEJ DO LEWEJ</marquee>    -->
  
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,6 +17,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <link rel="shortcut icon" href="assets/images/logo1.png" type="image/x-icon">
   <meta name="description" content="prawa autorskie zastrzezone przez wykonawce; Alex Jankowiak">
+	    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="Content-Script-Type" content="text/javascript">
   
   
   <title>AUTO JAROCIN</title>
@@ -33,12 +35,58 @@
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
   <link rel="preload" as="style" href="assets/autoo/css/additional.css"><link rel="stylesheet" href="assets/autoo/css/additional.css" type="text/css">
   
-  
-  
-  
+ <script type="text/javascript" src="zegar.js"></script>
+ <script type="text/javascript" src="stop.js"></script>
+	
+	<script type="text/javascript">
+
+  function myFunction() 
+	
+	{
+   
+		document.getElementById("demo").style.color = "red";
+
+    }
+
+    </script>
+	<script> 
+	function myFunction1() 
+	
+	{
+   
+		document.getElementById("demo").style.color = "white";
+
+    }
+
+    </script>
+	
+	<script>
+	
+	function sleep( sleepDuration )
+	{
+    	var now = new Date().getTime();
+    	while(new Date().getTime() < now + sleepDuration){} 
+	}
+	</script>
+	
+	<script>
+ 
+function stop() 
+	{
+
+		document.getElementById("oto");
+  sleep(17000);
+ 
+	}
+ 
+	</script>
+
+	
+	
+	
 </head>
 			<! ochrona strony>
-<body ondragstart="return false" ondrag="return false" oncontextmenu="return false" onbeforeprint="document.body.style.visibility = 'hidden'; alert('Wydruk jest niedostępny!')" onafterprint="document.body.style.visibility = 'visible'" onselectstart="return false" onselect="return false" oncopy="return false">
+<body onload="czas();" ondragstart="return false" ondrag="return false" oncontextmenu="return false" onbeforeprint="document.body.style.visibility = 'hidden'; alert('Wydruk jest niedostępny!')" onafterprint="document.body.style.visibility = 'visible'" onselectstart="return false" onselect="return false" oncopy="return false">
 			<! ochrona strony>
 					
 					
@@ -51,7 +99,7 @@
         <div class="container-fluid">
             <div class="navbar-brand">
                 <span class="navbar-logo">
-                    <a href="index.html#glowna">
+                    <a href="autojarocin.html#glowna">
                         <img src="assets/images/logo11-239x96.png" alt="AUTO JAROCIN" style="height: 3rem;">
                     </a>
                 </span>
@@ -66,9 +114,9 @@
                 </div>
             </button>
              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-white text-primary display-4" href="index.html#autokomis"><span class="mobi-mbri mobi-mbri-layers mbr-iconfont mbr-iconfont-btn"></span>O NAS</a></li>
+                <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-white text-primary display-4" href="autojarocin.html#autokomis"><span class="mobi-mbri mobi-mbri-layers mbr-iconfont mbr-iconfont-btn"></span>O NAS</a></li>
                     <li class="nav-item"><a class="nav-link link text-white text-primary display-4" href="https://autojarocin.otomoto.pl"><span class="mobi-mbri mobi-mbri-cash mbr-iconfont mbr-iconfont-btn"></span>OFERTY</a></li>
-                    <li class="nav-item"><a class="nav-link link text-white text-primary display-4" href="index.html#kontakt"><span class="mobi-mbri mobi-mbri-alert mbr-iconfont mbr-iconfont-btn"></span>KONTAKT</a>
+                    <li class="nav-item"><a class="nav-link link text-white text-primary display-4" href="autojarocin.html#kontakt"><span class="mobi-mbri mobi-mbri-alert mbr-iconfont mbr-iconfont-btn"></span>KONTAKT</a>
                     </li></ul>
                 
                 
@@ -91,7 +139,10 @@
                 <p class="mbr-text mbr-fonts-style mbr-white display-7">
                     Komis samochodowy zajmujący się sprzedażą, zamianą i skupem pojazdów używanych. W naszej gamie mamy szeroki zakres modeli, typów oraz rodzajów samochodów osobowych, jak i dostawczych.
                 </p>
-                <div class="mbr-section-btn mt-3"><a class="btn btn-secondary display-4" href="http://autojarocin.otomoto.pl" target="_blank">ZOBACZ NAS NA OTOMOTO!</a></div>
+                <div class="mbr-section-btn mt-3"><a class="btn btn-secondary display-4" href="http://autojarocin.otomoto.pl" target="_blank"><!--ZOBACZ NAS NA OTOMOTO!</a>-->
+				<script type="text/javascript" src="http://bajery.net/js/zg.js?c[]=FFFFFF&c[]=FFFFFF&c[]=FFFFFF&c[]=850909&c[]=2B0000&c[]=850909&timer=50&t=ZOBACZ%20NAS%20NA%20OTOMOTO!&s=3"></script>
+					</a>
+				</div>
             </div>
         </div>
     </div>
@@ -146,8 +197,8 @@
     <div class="container">
         <div class="mbr-section-head">
             <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
-				<strong>KONTAKT</strong></h3>
-            
+				<strong>KONTAKT</strong><br>
+<!zegar>  			<p onLoad="czas()"></p></h3>
         </div>
         <div class="row justify-content-center mt-4">
             <div class="card col-12 col-md-6">
@@ -170,9 +221,9 @@
                     <div class="text-wrapper">
                         <h6 class="card-title mbr-fonts-style mb-1 display-5">
                             <strong>Godziny otwarcia</strong></h6>
-                        <p class="mbr-text mbr-fonts-style display-7">
-							<a href="index.html#pytania" class="text-primary">11:00 - 18:00*</a>
-						</p>
+                        <p class="mbr-text mbr-fonts-style display-7" onclick="myFunction()">
+							<a href="autojarocin.html#pytania"  class="text-primary">11:00 - 18:00*</a>
+						</p> 
                     </div>
                 </div>
             </div>
@@ -193,9 +244,9 @@
                         <span class="mbr-iconfont mobi-mbri-globe mobi-mbri"></span>
                     </div>
                     <div class="text-wrapper">
-                        <h6 class="card-title mbr-fonts-style mb-1 display-5"><strong>Adres</strong></a></h6>
+                        <h6 class="card-title mbr-fonts-style mb-1 display-5"><strong>Adres</strong></h6>
                         <p class="mbr-text mbr-fonts-style display-7">
-                            <a href="index.html#mapa" class="text-primary">Al. Niepodległości 39, 63-200 Jarocin</a>
+                            <a href="autojarocin.html#mapa" class="text-primary">Al. Niepodległości 39, 63-200 Jarocin</a>
                         </p>
                     </div>
                 </div>
@@ -269,12 +320,14 @@
         <div class="row justify-content-center">
             <div class="col-12 col-md-10">
               
- <!tabela>     <div id="bootstrap-accordion_7" class="panel-group accordionStyles accordion" role="tablist" aria-multiselectable="true">
+ <!tabela>     <div id="bootstrap-accordion_7" class="panel-group accordionStyles accordion" 							role="tablist" aria-multiselectable="true">
           
-	<!poczatek>		<div class="card mb-3">
-                        <div class="card-header" role="tab" id="headingOne">
-                            <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse1_7" aria-expanded="false" aria-controls="collapse1">
-                                <h6 class="panel-title-edit mbr-fonts-style mb-0 display-7"><strong>W jakich godzinach jesteśmy czynni weekendami?</strong></h6>
+				<div class="card mb-3">
+                     <div class="card-header" role="tab" id="headingOne">
+                        <!poczatek>
+							<a role="button" onclick="myVar = setTimeout(myFunction1, 1000) " class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse1_7" aria-expanded="false" aria-controls="collapse1">
+						<!koniec>
+                                <h6 class="panel-title-edit mbr-fonts-style mb-0 display-7" id="demo"><strong>W jakich godzinach jesteśmy czynni weekendami?</strong></h6>
                                 <span class="sign mbr-iconfont mbri-arrow-down"></span>
                             </a>
                         </div>
@@ -349,9 +402,11 @@
 
     
     <div class="position-relative text-center">
-        
-        <div class="embla" data-skip-snaps="true" data-align="center" data-contain-scroll="trimSnaps" data-loop="true" data-auto-play="true" data-auto-play-interval="7" data-draggable="true">
-            <div class="embla__viewport container-fluid">
+		  <!script> 	
+				<p onmouseover="continue();"></p>
+	      <!script>
+        <div id="oto" class="embla" data-skip-snaps="true" data-align="center" data-contain-scroll="trimSnaps" data-loop="true" data-auto-play="true" data-auto-play-interval="7" data-draggable="true">
+			<div class="embla__viewport container-fluid">
                 <div class="embla__container">
                     <div class="embla__slide slider-image item active" style="margin-left: 10rem; margin-right: 10rem;">
                         <div class="card-wrap">
@@ -366,7 +421,7 @@
                                 <p class="card-text mbr-fonts-style align-center display-4">SEDAN | COUPE | KOMBI | KOMPAKT | SUV<br>
 												<br>
 <form action="https://autojarocin.otomoto.pl" method="get" target="_blank">
-<input type="text" name="q">
+<input type="text" name="q" onclick="stop();">
 <input type="hidden" name="ie" value="utf-8">
 <input type="hidden" name="sitesearch" value="https://autojarocin.otomoto.pl">
 <input type="submit" value="Szukaj">
@@ -392,7 +447,7 @@
                                 <p class="card-text mbr-fonts-style align-center display-4">6-OSOBOWY | 9-OSOBOWY | FURGON<br>
 												<br>
 <form action="https://autojarocin.otomoto.pl" method="get" target="_blank">
-<input type="text" name="q">
+<input type="text" name="q" onclick="stop();">
 <input type="hidden" name="ie" value="utf-8">
 <input type="hidden" name="sitesearch" value="https://autojarocin.otomoto.pl">
 <input type="submit" value="Szukaj" background-color: #CC0000>
@@ -417,7 +472,7 @@
                                     SEDAN | COUPE | KOMBI | KOMPAKT | SUV<br>
 												<br>
 <form action="https://autojarocin.otomoto.pl" method="get" target="_blank">
-<input type="text" name="q">
+<input type="text" name="q" onclick="stop">
 <input type="hidden" name="ie" value="utf-8">
 <input type="hidden" name="sitesearch" value="https://autojarocin.otomoto.pl">
 <input type="submit" value="Szukaj">
@@ -444,7 +499,7 @@
                                     6-OSOBOWY | 9-OSOBOWY | FURGON<br>
 												<br>
 <form action="https://autojarocin.otomoto.pl" method="get" target="_blank">
-<input type="text" name="q">
+<input type="text" name="q" onclick="stop();">
 <input type="hidden" name="ie" value="utf-8">
 <input type="hidden" name="sitesearch" value="https://autojarocin.otomoto.pl">
 <input type="submit" value="Szukaj">
@@ -522,7 +577,7 @@
                     
                     
                     
-                <li class="foot-menu-item mbr-fonts-style display-7"><a href="index.html#autokomis" class="text-info"><strong>O NAS</strong></a></li><li class="foot-menu-item mbr-fonts-style display-7"><a href="http://autojarocin.otomoto.pl" class="text-info"><strong>OFERTY</strong></a></li><li class="foot-menu-item mbr-fonts-style display-7"><a href="index.html#kontakt" class="text-info"><strong>KONTAKT</strong></a></li></ul>
+                <li class="foot-menu-item mbr-fonts-style display-7"><a href="autojarocin.html#autokomis" class="text-info"><strong>O NAS</strong></a></li><li class="foot-menu-item mbr-fonts-style display-7"><a href="http://autojarocin.otomoto.pl" class="text-info"><strong>OFERTY</strong></a></li><li class="foot-menu-item mbr-fonts-style display-7"><a href="index.html#kontakt" class="text-info"><strong>KONTAKT</strong></a></li></ul>
             </div>
             <div class="row social-row">
                 <div class="social-list align-right pb-2">
@@ -548,7 +603,9 @@
             </div>
             <div class="row row-copirayt">
                 <p class="mbr-text mb-0 mbr-fonts-style mbr-white align-center display-4">
-                    © Copyright by <strong>jankovviak</strong>. All Rights Reserved for <em>AUTO JAROCIN</em>.
+                   <!-- © Copyright by <strong>jankovviak</strong>. All Rights Reserved for <em>AUTO JAROCIN</em>.
+						<br> -->
+					<script type="text/javascript" src="http://bajery.net/js/zc.js?c[]=3B3B3B&c[]=850909&timer=1000&t=%C2%A9%20Copyright%20by%20%3Cstrong%3Ejankovviak%3C%2Fstrong%3E.%20All%20Rights%20Reserved%20for%20%3Cem%3EAUTO%20JAROCIN%3C%2Fem%3E."></script>
                 </p>
             </div>
         </div>
